@@ -1,0 +1,31 @@
+{
+  "_readme": "PLACEHOLDER rates for demonstration only. Copy the slabs, fixed charge and tax from YOUR latest bill. Slabs are per billing cycle. mode is 'telescopic' (each slab's rate applies only to units inside it) or 'flat_slab' (the slab your total lands in sets the rate for all units).",
+
+  "electricity": {
+    "name": "Example electricity tariff (edit me)",
+    "unit_label": "kWh",
+    "mode": "telescopic",
+    "fixed_charge": 100.0,
+    "tax_percent": 10.0,
+    "slabs": [
+      { "upto": 100, "rate": 3.5 },
+      { "upto": 200, "rate": 5.0 },
+      { "upto": 300, "rate": 6.5 },
+      { "upto": 500, "rate": 8.0 },
+      { "upto": null, "rate": 9.5 }
+    ]
+  },
+
+  "water": {
+    "name": "Example water tariff (edit me)",
+    "unit_label": "kL",
+    "mode": "telescopic",
+    "fixed_charge": 50.0,
+    "tax_percent": 0.0,
+    "slabs": [
+      { "upto": 15, "rate": 4.0 },
+      { "upto": 30, "rate": 6.0 },
+      { "upto": null, "rate": 10.0 }
+    ]
+  }
+}
